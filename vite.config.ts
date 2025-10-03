@@ -1,5 +1,10 @@
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
+import path from "path";
+import { componentTagger } from "lovable-tagger";
+
 export default defineConfig(({ mode }) => ({
-  base: '/Service/',
+  base: mode === 'github.com/kouider270' ? '/Service/' : '/',  // تأكد من أن 'Service' هو اسم المستودع
   server: {
     host: "::",
     port: 8080,
