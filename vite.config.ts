@@ -3,8 +3,9 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
+// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === 'github.com/kouider270' ? '/Service/' : '/',  // تأكد من أن 'Service' هو اسم المستودع
+  base: '/Service/',
   server: {
     host: "::",
     port: 8080,
